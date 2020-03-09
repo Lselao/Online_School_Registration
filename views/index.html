@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>College Registering System</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+		<script src="/javascript/js.js="></script>
+	</head>
+	<body class="body">
+		<header class="mainheader">
+            <div>
+                <img src="images/schoolbag.webp" alt="schoolbag"> 
+                    <center>
+                        <h1>Online School Registration</h1>
+                    </center>
+            </div>
+
+        <span id="result" style="display: none;">{{ status }}</span>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="faculty">Faculties</a></li>
+                
+                    <script>
+                        let result = document.getElementById('result').innerHTML;
+                    
+                        if (result === "true"){
+                            document.write("<li><a href='logout'>Logout</a></li>");
+                            document.write("<li><a href='profile'>Update Profile</a></li>");
+                        }
+                        else{
+                          document.write("<li><a href='signup'>Register Online</a></li>");
+                          document.write("<li><a href='login'>Login</a></li>");
+                        }
+                    </script>
+
+                    <li><a href="contact">Contact Us</a></li>
+                    <content id="search">
+                        <form>
+                                <input type="text" name="search" placeholder="Search" onclick="window.location.href='search.html'">
+                        </form>
+                    </content>
+                </ul> 
+    		</nav>
+        </header>
+        <br>
+
+        <div class="slideshow-container">
+            <div class="iambrpslides fade">
+                <div class="numbertext">01 / 04</div>
+                <img src="./images/humanities.jpg" alt="humanities">
+            </div>
+            <div class="iambrpslides fade">
+                <div class="numbertext">02 / 04</div>
+                <img src="./images/science.png" alt="science">  
+            </div>
+            <div class="iambrpslides fade">
+                <div class="numbertext">03 / 04</div>
+                <img src="./images/media.jpg" alt="media">
+            </div>
+            <div class="iambrpslides fade">
+                <div class="numbertext">04 / 04</div>
+                <img src="./images/educatiom.jpg" alt="education">
+            </div>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            function showSlides()
+            {
+                var i;
+                var slides = document.getElementsByClassName("iambrpslides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++)
+                {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex> slides.length)
+                    {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++)
+                {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2500); // This is for Changing image every 2.5 seconds
+            }
+        </script>
+        <br>
+	
+	    <script type="text/javascript">
+            document.title="Home";
+        </script>
+	
+			
+        <script src="scripts/slider.js"></script>
+
+        <div class="mainContent">
+            <div class="Content">
+                <article class="topContent">
+		       <img src="/images/lecturerTalk.jpg" alt="Lecturer kanes quote">
+	            </article>
+	            <article class="bottomContent">
+               "Dream bigger than your mind can imagine"<br>
+               -Dr Bluejeans
+                </article>
+            </div>
+        </div>
+
+        <aside class="top-sidebar">
+            <article>
+                Software engineering coming soon!
+            </article>
+        </aside>
+        <aside class="middle-sidebar">
+            <article>
+                New resources to be updated
+            </article>  
+        </aside>
+        <aside class="buttom-sidebar">
+            <article>
+                Qualifications recognized
+        	</article>
+        </aside>
+        <aside class="buttom-sidebar">
+            <article>
+                Open Day at Durban this Saturday!
+        	</article>
+        </aside>
+
+        <footer class="mainFooter">
+            <p>
+                Copyright &copy <a href="https://github.com/veronar">Verona</a>
+                <a href="https://github.com/Kseperep1">Kamo</a>
+                <a href="https://www.wethinkcode.co.za/">Lebo</a>
+                <a href="https://github.com/TafLaw">Taf</a>
+                <a href="https://github.com/Sakhile-Msibi">Sakhile</a>
+            </p>
+        </footer>
+        
+    </body>
+</html>

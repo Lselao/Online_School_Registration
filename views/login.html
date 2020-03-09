@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>LOGIN</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+		<script src="/javascript/js.js="></script>
+		<script src="/javascript/login.js"></script> 
+	</head>
+	<body class="body">
+		<header class="mainheader">
+			<!-- <div> -->
+				<img src="images/schoolbag.webp" alt="schoolbag"> 
+				<center>
+					<h1>Online School Registration</h1>
+				</center>
+			<!-- </div> -->
+			
+			<nav>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="faculty">Faculties</a></li>
+					<li><a href="signup">Register Online</a></li>
+					<li><a href="login">Login</a></li>
+					<li><a href="contact">Contact Us</a></li>
+					<content id="search">
+						<form>
+						<input type="text" name="search" placeholder="Search anything..." onclick="window.location.href='search.html'">
+						</form>
+					</content>
+				</ul> 
+			</nav>
+		</header>
+		
+		<div class="container">
+<div class="main">
+	  			<h3>LOGIN</h3><hr/>
+ 				<form id="form_id" method="post" style="position: relative" name="myform" action="/login">
+					
+					<label>Email :</label>
+			  		<input id="email" type="email" name="email" placeholder="email" required>
+					  
+					  <label>Password :</label>
+					  <input id="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" required>
+					
+					<input id="submit" type="submit" value="SUBMIT">
+					<a href="signup.html">Register</a>
+					<a href="forgot.html">Forgot password</a>
+				</form>
+	  		</div>
+	 
+		</div>
+
+		<footer class="mainFooter">
+			<p>
+				Copyright &copy <a href="https://github.com/veronar">Verona</a>
+				<a href="https://github.com/Kseperep1">Kamo</a>
+				<a href="https://www.wethinkcode.co.za/">Lebo</a>
+				<a href="https://github.com/TafLaw">Taf</a>
+				<a href="https://github.com/Sakhile-Msibi">Sakhile</a>
+			</p>
+		</footer>
+		<script type="text/javascript">
+  			document.title="Login";
+		</script>
+	</body>
+</html>

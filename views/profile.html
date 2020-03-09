@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>SIGN UP</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+		<script src="/javascript/js.js="></script>
+		<script src="/javascript/login.js"></script> 
+	</head>
+	<body class="body">
+		<header class="mainheader">
+			<div>
+				<img src="images/schoolbag.webp" alt="schoolbag"> 
+				<!-- <div> -->
+					<center>
+						<h1>Online School Registration</h1>
+					</center>
+				<!-- </div> -->
+			</div>
+		
+			<nav>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="faculty">Faculties</a></li>
+					<li><a href="logout">Logout</a></li>
+					<li><a href="contact">Contact Us</a></li>
+					<li><a href="profile">Update Profile</a></li>
+					<content id="search">
+						<form>
+								<input type="text" name="search" placeholder="Search anything..." onclick="window.location.href='search.html'">
+						</form>
+					</content>
+				</ul> 
+			</nav>
+		</header>
+		
+		<div class="container">
+			<div class="main">
+	  			<h3>Update Profile</h3><hr/>
+ 				<form id="form_id" method="post" style="position: relative" name="myform" action="">
+			  		
+					<label>First Name: </label>
+                    	<input id="name" name="fname" placeholder='{{ fname }}' type="text" readonly>
+                    <label>Last Name: </label>
+                    	<input id="name" name="lname" placeholder='{{ lname }}' type="text" readonly>
+                    <label>Email: </label>
+					<input id="email" name="email" placeholder="Email" type="email">
+					<br>
+					<label>Date Of Birth: </label>
+					<input id="dob" name="dob" type="date" pattern="\d{1,2}/\d{1,2}/\d{4}" max="2004-12-31" min="1970-01-01">
+					<label>Gender: </label><br>
+					<input id="Gender" name="M" type="radio">Male
+					<input id="Gender" name="M" type="radio">Female<br><br>
+					<label>ID: </label>
+					<input id="ID" type="number" placeholder="Identification" name="ID" pattern="[0-9]"><br>
+					<label>Phone Number: </label>
+						<input id="phone" name="phone" placeholder="Phone Number" type="tel">
+						<input name="phone" type="submit" value=" Submit "><br>
+					<label>New Password: </label>
+						<input id="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password">
+					<label>Confirm Password: </label>
+						<input id="password" name="con_password" placeholder="Confirm password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password">
+					<input name="password" type="submit" value=" Submit ">
+
+				</form>
+	  		</div>
+	 	<!--	<div class="fugo">
+		 		<a href="images/login_photo.jpg"><img src="images/login_photo.jpg" /></a>
+	  		</div>-->
+		</div>
+
+		<footer class="mainFooter">
+			<p>
+				Copyright & copy <a href="https://github.com/veronar">Verona</a>
+				<a href="https://www.wethinkcode.co.za/">Kamo</a>
+				<a href="https://www.wethinkcode.co.za/">Lebo</a>
+				<a href="https://github.com/TafLaw">Taf</a>
+				<a href="https://github.com/Sakhile-Msibi">Sakhile</a>
+			</p>
+		</footer>
+		
+		<script type="text/javascript">
+  			document.title="Login";
+		</script>
+
+	</body>
+</html>

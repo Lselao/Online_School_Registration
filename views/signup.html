@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>SIGN UP</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+		<script src="/javascript/js.js="></script>
+		<script src="/javascript/login.js"></script> 
+	</head>
+	<body class="body">
+		<header class="mainheader">
+			<img src="images/schoolbag.webp" alt="schoolbag"> 
+			<div>
+				<center>
+					<h1>Online School Registration</h1>
+				</center>
+			</div>
+			<br>
+			<br>
+			<br>
+			<nav>
+				<ul>
+					<li><a href="localhost:300/">Home</a></li>
+					<li><a href="faculty">Faculties</a></li>
+					<li><a href="signup">Register Online</a></li>
+					<li><a href="login">Login</a></li>
+					<li><a href="contact">Contact Us</a></li>
+					<content id="search">
+						<form>
+							<input type="text" name="search" placeholder="Search anything..." onclick="window.location.href='search.html'">
+						</form>
+					</content>
+				</ul> 
+			</nav>
+		</header>
+		
+		<div class="container">
+			<div class="main">
+	  			<h3>SIGN UP</h3><hr/>
+ 				<form id="form_id" method="post" style="position: relative" name="myform" action="">
+			  		
+					<label>First Name: </label>
+                    	<input id="fname" name="fname" placeholder="FirstName" type="text" required>
+                    <label>Last Name: </label>
+                    	<input id="lname" name="lname" placeholder="LastName" type="text" required>
+                    <label>Email: </label>
+						<input id="email" name="email" placeholder="Email" type="email" required>
+                    <label>Phone Number: </label>
+						<input id="phone" name="phone" placeholder="Phone Number" type="tel" required>
+					<label>Date Of Birth: </label>
+						<input id="dob" name="dob" type="date" pattern="\d{1,2}/\d{1,2}/\d{4}" max="2004-12-31" min="1970-01-01" required>
+					<label>Gender: </label><br>
+						<input id="male" name="gender" value="m" type="radio" required>Male
+						<input id="female" name="gender"  value="f" type="radio" required>Female<br><br>
+                    <label>ID: </label>
+						<input id="ID" type="number" placeholder="Identification" name="ID" pattern="[0-9]" required><br>
+					<label>Password: </label>
+						<input id="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" required>
+					<label>Confirm Password: </label>
+						<input id="conpassword" name="con_password" placeholder="Confirm password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" required>
+					<input name="submit" type="submit" value=" Submit ">
+
+				</form>
+	  		</div>
+		</div>
+
+		<footer class="mainFooter">
+			<p>
+				Copyright &copy <a href="https://github.com/veronar">Verona</a>
+				<a href="https://www.wethinkcode.co.za/">Kamo</a>
+				<a href="https://www.wethinkcode.co.za/">Lebo</a>
+				<a href="https://github.com/TafLaw">Taf</a>
+				<a href="https://github.com/Sakhile-Msibi">Sakhile</a>
+			</p>
+		</footer>
+		
+		<script type="text/javascript">
+  			document.title="Login";
+		</script>
+	</body>
+</html>

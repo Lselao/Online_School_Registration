@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Us</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <script src="/javascript/js.js"></script>
+  <script src="/javascript/validatename.js"></script>
+</head>
+
+<body class="body">
+  <header class="mainheader">
+    <div>
+        <img src="images/schoolbag.webp" alt="schoolbag"> 
+            <center>
+              <h1>Online School Registration</h1>
+            </center>
+    </div>
+
+<span id="result" style="display: none;">{{ status }}</span>
+
+<nav>
+  <ul>
+    <li><a href="home">Home</a></li>
+    <li><a href="faculty">Faculties</a></li>
+    <script>
+      let result = document.getElementById('result').innerHTML;
+      
+      if (result === "true")
+      document.write("<li><a href='logout'>Logout</a></li>");
+      else{
+        document.write("<li><a href='signup'>Register Online</a></li>");
+        document.write("<li><a href='login'>Login</a></li>");
+      }
+      </script>
+  		  	<li><a href="contact">Contact Us</a></li>	
+          <content id="search">
+            <form>
+              <input type="text" name="search" placeholder="Search anything..." onclick="window.location.href='search.html'">
+            </form>
+          </content>
+  		  </ul> 
+      </nav>
+    </header>
+    <h3>Contact</h3>
+    <h4>School registering system</h4>
+<pre>
+        Phone : 000 000 0000<br>
+        Email :  xxxxxxxx@xxxxxx.xxx<br>
+    </pre>
+
+        <br>
+        <br>
+
+        <strong>If you are student please enter your student number:</strong>
+        <center>
+          <input id="numb">
+
+          <input type="submit" onclick="myFunction()">
+
+          <p id="demo"></p>
+        </center>
+        <hr>
+
+        <footer class="mainFooter">
+          <p>
+            Copyright &copy <a href="https://github.com/veronar">Verona</a>
+            <a href="https://www.wethinkcode.co.za/">Kamo</a>
+            <a href="https://www.wethinkcode.co.za/">Lebo</a>
+            <a href="https://github.com/TafLaw">Taf</a>
+            <a href="https://github.com/Sakhile-Msibi">Sakhile</a>
+          </p>
+        </footer>
+
+        <script>
+          function myFunction()
+          {
+            var x, text;
+  
+            // Get the value of the input field with id="numb"
+            x = document.getElementById("numb").value;
+
+            // If x is Not a Number or less than one or greater than 10
+            if (isNaN(x) || x < 1 || x > 1000)
+            {
+              text = "Input not valid";
+            }
+            else
+            {
+              text = "Input OK";
+            } 
+            document.getElementById("demo").innerHTML = text;
+          }
+        </script>
+
+    <script type="text/javascript">
+        document.title="Contact";
+      </script>
+  </body>
+</html>

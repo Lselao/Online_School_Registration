@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <title>Faculties</title>
+	  <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <script src="/javascript/js.js="></script>
+  </head>
+  <body class="body">
+      
+    <header class="mainheader">
+	    <div>
+            <img src="/images/schoolbag.webp" alt="schoolbag"> 
+            <div>
+                <center>
+                    <h1>Online School Registration</h1>
+                </center>
+            </div>
+        </div>
+   
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/faculty">Faculties</a></li>
+            <li><a href="/login">Logout</a></li>
+            <li><a href="/contact">Contact Us</a></li>	
+            <content id="search">
+                <form>
+            <input type="text" name="search" placeholder="Search anything..." onclick="window.location.href='search.html'">
+            </form>
+            </content>
+        </ul> 
+    </nav>
+
+    <h1>My Courses</h1>
+    <div class="course">
+      <h3>Registered Courses</h3>
+      <span id="result" style="display: none;">{{ courses }}</span>
+      <span id="result2" style="display: none;">{{ reqId }}</span>
+      <script>
+        let result2 = document.getElementById('result2').innerHTML; 
+        let result = document.getElementById('result').innerHTML;
+        let resArr = result.split(',');
+        let res2Arr = result2.split(',');
+
+        if (resArr.length > 0 && resArr[0]){
+            for(i=0; i<resArr.length; i++)
+              document.write("<ul><li>"+resArr[i]+"<form method='POST' action='/faculty/deleteCourse'><input type='hidden' name='regId' value='"+res2Arr[i]+"'/> <button style='float:right'>Delete</button></form></li></ul>")
+        }
+    </script>
+      
+
+    </div>
+
+    <hr>
+    <footer class="mainFooter">
+                
+      <p>
+          Copyright &copy <a href="https://github.com/veronar">Verona</a>
+          <a href="https://www.wethinkcode.co.za/">Kamo</a>
+          <a href="https://www.wethinkcode.co.za/">Lebo</a>
+          <a href="https://github.com/TafLaw">Taf</a>
+          <a href="https://github.com/Sakhile-Msibi">Sakhile</a>
+        </p>
+    </footer>
+    <script type="text/javascript">
+	    document.title="Course";
+    </script>
+    <script type="text/javascript">
+      document.getElementById("myButton").onclick = function () {
+          location.href = "EDIT EDIT DIERCTION TO THE SQL";
+      };
+  </script>
+  </body>
+</html>

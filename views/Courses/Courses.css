@@ -1,0 +1,138 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .back-image1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.856), rgba(70, 28, 28, 0.87)), url("../images/anatomy.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .back-image2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(131, 49, 49, 0.5)), url("../images/art.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .back-image3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(131, 49, 49, 0.5)), url("../images/biology.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .back-image4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(131, 49, 49, 0.5)), url("../images/clinical\ medicine.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .back-image5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(131, 49, 49, 0.5)), url("../images/comp_science.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .back-image6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(131, 49, 49, 0.5)), url("../images/education.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .back-image7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(131, 49, 49, 0.5)), url("../images/gscience.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .back-image8 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(131, 49, 49, 0.5)), url("../images/media.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .back-image9 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(131, 49, 49, 0.5)), url("../images/medical\ s.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .back-image10 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(131, 49, 49, 0.5)), url("../images/oral.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .back-image11 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(131, 49, 49, 0.5)), url("../images/physics.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .back-image12 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(131, 49, 49, 0.5)), url("../images/s_science.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
